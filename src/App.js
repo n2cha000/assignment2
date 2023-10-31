@@ -1,9 +1,9 @@
-// import Search from './search';
+
 import './App.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-//const URL = "https://random-data-api.com/api/v2/credit_cards"
+const URL = "https://random-data-api.com/api/v2/credit_cards"
 
 function App() {
   const [number, setNumber] = useState('')
@@ -12,7 +12,7 @@ function App() {
 
 
   useEffect(() => {
-  //axios.get(URL)
+  axios.get(URL)
   .then((response) => {
     console.log(response.data)
     setNumber(response.data.credit_card_number)
