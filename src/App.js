@@ -12,7 +12,7 @@ function App() {
 
 
   useEffect(() => {
-  axios.get(URL)
+  //axios.get(URL)
   .then((response) => {
     console.log(response.data)
     setNumber(response.data.credit_card_number)
